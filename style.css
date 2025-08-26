@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #fff;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #0073e6;
+}
+
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 60px 10%;
+  gap: 20px;
+  background: #f1f1f1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #555;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+  background: #0073e6;
+  transform: scale(1.05);
+}
+
+.hero img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 10%;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 15px;
+}
+
+/* Form Section */
+.form-section {
+  background: #fff;
+  padding: 40px 10%;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 992px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero img {
+    margin: 0 auto;
+  }
+}
